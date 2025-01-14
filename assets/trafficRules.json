@@ -1,0 +1,4002 @@
+[
+    {
+        "id": "1",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "2",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "3",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "4",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "5",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "6",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "7",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "8",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "9",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "10",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "11",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "12",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "13",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "14",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "15",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "16",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "17",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "18",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "19",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "20",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "21",
+        "rule": "Avoid tailgating and maintain a safe following distance."
+    },
+    {
+        "id": "22",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "23",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "24",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "25",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "26",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "27",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "28",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "29",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "30",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "31",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "32",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "33",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "34",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "35",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "36",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "37",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "38",
+        "rule": "Ensure all vehicle passengers are safely secured before departure."
+    },
+    {
+        "id": "39",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "40",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "41",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "42",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "43",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "44",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "45",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "46",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "47",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "48",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "49",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "50",
+        "rule": "Ensure your headlights are clean and functional."
+    },
+    {
+        "id": "51",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "52",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "53",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "54",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "55",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "56",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "57",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "58",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "59",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "60",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "61",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "62",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "63",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "64",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "65",
+        "rule": "Ensure all vehicle passengers are safely secured before departure."
+    },
+    {
+        "id": "66",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "67",
+        "rule": "Avoid tailgating and maintain a safe following distance."
+    },
+    {
+        "id": "68",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "69",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "70",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "71",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "72",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "73",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "74",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "75",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "76",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "77",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "78",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "79",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "80",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "81",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "82",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "83",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "84",
+        "rule": "Avoid tailgating and maintain a safe following distance."
+    },
+    {
+        "id": "85",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "86",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "87",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "88",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "89",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "90",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "91",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "92",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "93",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "94",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "95",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "96",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "97",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "98",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "99",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "100",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "101",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "102",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "103",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "104",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "105",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "106",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "107",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "108",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "109",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "110",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "111",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "112",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "113",
+        "rule": "Drive cautiously when near animals or wildlife on roads."
+    },
+    {
+        "id": "114",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "115",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "116",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "117",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "118",
+        "rule": "Ensure your headlights are clean and functional."
+    },
+    {
+        "id": "119",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "120",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "121",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "122",
+        "rule": "Adhere to the posted speed limits in construction zones."
+    },
+    {
+        "id": "123",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "124",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "125",
+        "rule": "Always be aware of construction zones and roadwork."
+    },
+    {
+        "id": "126",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "127",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "128",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "129",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "130",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "131",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "132",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "133",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "134",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "135",
+        "rule": "Adhere to the posted speed limits in construction zones."
+    },
+    {
+        "id": "136",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "137",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "138",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "139",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "140",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "141",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "142",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "143",
+        "rule": "Use hands-free devices for phone calls when driving."
+    },
+    {
+        "id": "144",
+        "rule": "Drive cautiously when near animals or wildlife on roads."
+    },
+    {
+        "id": "145",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "146",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "147",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "148",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "149",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "150",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "151",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "152",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "153",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "154",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "155",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "156",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "157",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "158",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "159",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "160",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "161",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "162",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "163",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "164",
+        "rule": "Give way to emergency vehicles with flashing lights."
+    },
+    {
+        "id": "165",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "166",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "167",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "168",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "169",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "170",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "171",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "172",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "173",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "174",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "175",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "176",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "177",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "178",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "179",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "180",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "181",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "182",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "183",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "184",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "185",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "186",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "187",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "188",
+        "rule": "Avoid tailgating and maintain a safe following distance."
+    },
+    {
+        "id": "189",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "190",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "191",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "192",
+        "rule": "Drive cautiously when near animals or wildlife on roads."
+    },
+    {
+        "id": "193",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "194",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "195",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "196",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "197",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "198",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "199",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "200",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "201",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "202",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "203",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "204",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "205",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "206",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "207",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "208",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "209",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "210",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "211",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "212",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "213",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "214",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "215",
+        "rule": "Ensure your headlights are clean and functional."
+    },
+    {
+        "id": "216",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "217",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "218",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "219",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "220",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "221",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "222",
+        "rule": "Drive cautiously when near animals or wildlife on roads."
+    },
+    {
+        "id": "223",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "224",
+        "rule": "Do not make U-turns in dangerous or prohibited locations."
+    },
+    {
+        "id": "225",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "226",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "227",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "228",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "229",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "230",
+        "rule": "Avoid tailgating and maintain a safe following distance."
+    },
+    {
+        "id": "231",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "232",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "233",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "234",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "235",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "236",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "237",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "238",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "239",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "240",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "241",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "242",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "243",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "244",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "245",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "246",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "247",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "248",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "249",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "250",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "251",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "252",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "253",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "254",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "255",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "256",
+        "rule": "Give way to emergency vehicles with flashing lights."
+    },
+    {
+        "id": "257",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "258",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "259",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "260",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "261",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "262",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "263",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "264",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "265",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "266",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "267",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "268",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "269",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "270",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "271",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "272",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "273",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "274",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "275",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "276",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "277",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "278",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "279",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "280",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "281",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "282",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "283",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "284",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "285",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "286",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "287",
+        "rule": "Drive cautiously when near animals or wildlife on roads."
+    },
+    {
+        "id": "288",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "289",
+        "rule": "Adhere to the posted speed limits in construction zones."
+    },
+    {
+        "id": "290",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "291",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "292",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "293",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "294",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "295",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "296",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "297",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "298",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "299",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "300",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "301",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "302",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "303",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "304",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "305",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "306",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "307",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "308",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "309",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "310",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "311",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "312",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "313",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "314",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "315",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "316",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "317",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "318",
+        "rule": "Ensure all vehicle passengers are safely secured before departure."
+    },
+    {
+        "id": "319",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "320",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "321",
+        "rule": "Use hands-free devices for phone calls when driving."
+    },
+    {
+        "id": "322",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "323",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "324",
+        "rule": "Ensure your headlights are clean and functional."
+    },
+    {
+        "id": "325",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "326",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "327",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "328",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "329",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "330",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "331",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "332",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "333",
+        "rule": "Give way to emergency vehicles with flashing lights."
+    },
+    {
+        "id": "334",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "335",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "336",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "337",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "338",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "339",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "340",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "341",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "342",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "343",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "344",
+        "rule": "Ensure your headlights are clean and functional."
+    },
+    {
+        "id": "345",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "346",
+        "rule": "Do not make U-turns in dangerous or prohibited locations."
+    },
+    {
+        "id": "347",
+        "rule": "Always be aware of construction zones and roadwork."
+    },
+    {
+        "id": "348",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "349",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "350",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "351",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "352",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "353",
+        "rule": "Give way to emergency vehicles with flashing lights."
+    },
+    {
+        "id": "354",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "355",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "356",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "357",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "358",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "359",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "360",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "361",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "362",
+        "rule": "Use hands-free devices for phone calls when driving."
+    },
+    {
+        "id": "363",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "364",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "365",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "366",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "367",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "368",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "369",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "370",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "371",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "372",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "373",
+        "rule": "Do not make U-turns in dangerous or prohibited locations."
+    },
+    {
+        "id": "374",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "375",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "376",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "377",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "378",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "379",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "380",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "381",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "382",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "383",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "384",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "385",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "386",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "387",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "388",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "389",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "390",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "391",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "392",
+        "rule": "Adhere to the posted speed limits in construction zones."
+    },
+    {
+        "id": "393",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "394",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "395",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "396",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "397",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "398",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "399",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "400",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "401",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "402",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "403",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "404",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "405",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "406",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "407",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "408",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "409",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "410",
+        "rule": "Always be aware of construction zones and roadwork."
+    },
+    {
+        "id": "411",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "412",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "413",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "414",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "415",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "416",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "417",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "418",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "419",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "420",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "421",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "422",
+        "rule": "Drive cautiously when near animals or wildlife on roads."
+    },
+    {
+        "id": "423",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "424",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "425",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "426",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "427",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "428",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "429",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "430",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "431",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "432",
+        "rule": "Always be aware of construction zones and roadwork."
+    },
+    {
+        "id": "433",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "434",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "435",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "436",
+        "rule": "Ensure all vehicle passengers are safely secured before departure."
+    },
+    {
+        "id": "437",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "438",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "439",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "440",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "441",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "442",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "443",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "444",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "445",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "446",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "447",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "448",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "449",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "450",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "451",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "452",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "453",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "454",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "455",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "456",
+        "rule": "Use hands-free devices for phone calls when driving."
+    },
+    {
+        "id": "457",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "458",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "459",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "460",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "461",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "462",
+        "rule": "Give way to emergency vehicles with flashing lights."
+    },
+    {
+        "id": "463",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "464",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "465",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "466",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "467",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "468",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "469",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "470",
+        "rule": "Do not make U-turns in dangerous or prohibited locations."
+    },
+    {
+        "id": "471",
+        "rule": "Avoid tailgating and maintain a safe following distance."
+    },
+    {
+        "id": "472",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "473",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "474",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "475",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "476",
+        "rule": "Avoid tailgating and maintain a safe following distance."
+    },
+    {
+        "id": "477",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "478",
+        "rule": "Always be aware of construction zones and roadwork."
+    },
+    {
+        "id": "479",
+        "rule": "Use hands-free devices for phone calls when driving."
+    },
+    {
+        "id": "480",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "481",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "482",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "483",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "484",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "485",
+        "rule": "Drive cautiously when near animals or wildlife on roads."
+    },
+    {
+        "id": "486",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "487",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "488",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "489",
+        "rule": "Give way to emergency vehicles with flashing lights."
+    },
+    {
+        "id": "490",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "491",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "492",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "493",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "494",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "495",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "496",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "497",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "498",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "499",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "500",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "501",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "502",
+        "rule": "Drive cautiously when near animals or wildlife on roads."
+    },
+    {
+        "id": "503",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "504",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "505",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "506",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "507",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "508",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "509",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "510",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "511",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "512",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "513",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "514",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "515",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "516",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "517",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "518",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "519",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "520",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "521",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "522",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "523",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "524",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "525",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "526",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "527",
+        "rule": "Always be aware of construction zones and roadwork."
+    },
+    {
+        "id": "528",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "529",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "530",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "531",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "532",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "533",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "534",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "535",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "536",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "537",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "538",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "539",
+        "rule": "Ensure your headlights are clean and functional."
+    },
+    {
+        "id": "540",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "541",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "542",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "543",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "544",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "545",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "546",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "547",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "548",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "549",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "550",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "551",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "552",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "553",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "554",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "555",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "556",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "557",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "558",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "559",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "560",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "561",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "562",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "563",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "564",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "565",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "566",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "567",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "568",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "569",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "570",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "571",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "572",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "573",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "574",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "575",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "576",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "577",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "578",
+        "rule": "Avoid tailgating and maintain a safe following distance."
+    },
+    {
+        "id": "579",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "580",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "581",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "582",
+        "rule": "Always be aware of construction zones and roadwork."
+    },
+    {
+        "id": "583",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "584",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "585",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "586",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "587",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "588",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "589",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "590",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "591",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "592",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "593",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "594",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "595",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "596",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "597",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "598",
+        "rule": "Use hands-free devices for phone calls when driving."
+    },
+    {
+        "id": "599",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "600",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "601",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "602",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "603",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "604",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "605",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "606",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "607",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "608",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "609",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "610",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "611",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "612",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "613",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "614",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "615",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "616",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "617",
+        "rule": "Drive cautiously when near animals or wildlife on roads."
+    },
+    {
+        "id": "618",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "619",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "620",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "621",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "622",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "623",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "624",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "625",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "626",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "627",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "628",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "629",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "630",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "631",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "632",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "633",
+        "rule": "Use hands-free devices for phone calls when driving."
+    },
+    {
+        "id": "634",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "635",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "636",
+        "rule": "Never drive with expired vehicle registration or insurance."
+    },
+    {
+        "id": "637",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "638",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "639",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "640",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "641",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "642",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "643",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "644",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "645",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "646",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "647",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "648",
+        "rule": "Adhere to the posted speed limits in construction zones."
+    },
+    {
+        "id": "649",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "650",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "651",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "652",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "653",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "654",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "655",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "656",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "657",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "658",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "659",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "660",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "661",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "662",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "663",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "664",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "665",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "666",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "667",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "668",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "669",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "670",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "671",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "672",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "673",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "674",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "675",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "676",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "677",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "678",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "679",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "680",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "681",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "682",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "683",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "684",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "685",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "686",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "687",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "688",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "689",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "690",
+        "rule": "Do not make U-turns in dangerous or prohibited locations."
+    },
+    {
+        "id": "691",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "692",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "693",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "694",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "695",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "696",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "697",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "698",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "699",
+        "rule": "Ensure your headlights are clean and functional."
+    },
+    {
+        "id": "700",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "701",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "702",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "703",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "704",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "705",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "706",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "707",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "708",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "709",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "710",
+        "rule": "Always be aware of construction zones and roadwork."
+    },
+    {
+        "id": "711",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "712",
+        "rule": "Give way to emergency vehicles with flashing lights."
+    },
+    {
+        "id": "713",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "714",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "715",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "716",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "717",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "718",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "719",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "720",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "721",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "722",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "723",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "724",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "725",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "726",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "727",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "728",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "729",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "730",
+        "rule": "Use hands-free devices for phone calls when driving."
+    },
+    {
+        "id": "731",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "732",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "733",
+        "rule": "Do not make U-turns in dangerous or prohibited locations."
+    },
+    {
+        "id": "734",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "735",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "736",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "737",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "738",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "739",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "740",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "741",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "742",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "743",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "744",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "745",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "746",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "747",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "748",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "749",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "750",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "751",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "752",
+        "rule": "Avoid tailgating and maintain a safe following distance."
+    },
+    {
+        "id": "753",
+        "rule": "Use hands-free devices for phone calls when driving."
+    },
+    {
+        "id": "754",
+        "rule": "Do not make U-turns in dangerous or prohibited locations."
+    },
+    {
+        "id": "755",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "756",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "757",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "758",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "759",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "760",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "761",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "762",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "763",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "764",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "765",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "766",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "767",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "768",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "769",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "770",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "771",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "772",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "773",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "774",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "775",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "776",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "777",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "778",
+        "rule": "Adhere to the posted speed limits in construction zones."
+    },
+    {
+        "id": "779",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "780",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "781",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "782",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "783",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "784",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "785",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "786",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "787",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "788",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "789",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "790",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "791",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "792",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "793",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "794",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "795",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "796",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "797",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "798",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "799",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "800",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "801",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "802",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "803",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "804",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "805",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "806",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "807",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "808",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "809",
+        "rule": "Take care when driving through tunnels and underpasses."
+    },
+    {
+        "id": "810",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "811",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "812",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "813",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "814",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "815",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "816",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "817",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "818",
+        "rule": "Ensure your headlights are clean and functional."
+    },
+    {
+        "id": "819",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "820",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "821",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "822",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "823",
+        "rule": "Be aware of cyclists and give them sufficient space."
+    },
+    {
+        "id": "824",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "825",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "826",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "827",
+        "rule": "Always use seatbelts, regardless of the length of the trip."
+    },
+    {
+        "id": "828",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "829",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "830",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "831",
+        "rule": "Do not make U-turns in dangerous or prohibited locations."
+    },
+    {
+        "id": "832",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "833",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "834",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "835",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "836",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "837",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "838",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "839",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "840",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "841",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "842",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "843",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "844",
+        "rule": "Always yield to pedestrians at crosswalks."
+    },
+    {
+        "id": "845",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "846",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "847",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "848",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "849",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "850",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "851",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "852",
+        "rule": "Yield to buses when they signal to merge back into traffic."
+    },
+    {
+        "id": "853",
+        "rule": "Check for cyclists before opening your car door."
+    },
+    {
+        "id": "854",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "855",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "856",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "857",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "858",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "859",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "860",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "861",
+        "rule": "Give way to emergency vehicles with flashing lights."
+    },
+    {
+        "id": "862",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "863",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "864",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "865",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "866",
+        "rule": "Avoid sudden braking in heavy traffic."
+    },
+    {
+        "id": "867",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "868",
+        "rule": "Yield to traffic when merging onto highways."
+    },
+    {
+        "id": "869",
+        "rule": "Adhere to the posted speed limits in construction zones."
+    },
+    {
+        "id": "870",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "871",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "872",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "873",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "874",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "875",
+        "rule": "Ensure all vehicle passengers are safely secured before departure."
+    },
+    {
+        "id": "876",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "877",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "878",
+        "rule": "Ensure your headlights are clean and functional."
+    },
+    {
+        "id": "879",
+        "rule": "Avoid tailgating and maintain a safe following distance."
+    },
+    {
+        "id": "880",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "881",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "882",
+        "rule": "Adhere to the posted speed limits in construction zones."
+    },
+    {
+        "id": "883",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "884",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "885",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "886",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "887",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "888",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "889",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "890",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "891",
+        "rule": "Be extra cautious when driving near large trucks."
+    },
+    {
+        "id": "892",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "893",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "894",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "895",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "896",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "897",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "898",
+        "rule": "Follow speed limits posted on road signs."
+    },
+    {
+        "id": "899",
+        "rule": "Use turn signals to communicate lane changes and turns."
+    },
+    {
+        "id": "900",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "901",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "902",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "903",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "904",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "905",
+        "rule": "Always drive within your abilities and the road conditions."
+    },
+    {
+        "id": "906",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "907",
+        "rule": "Do not block pedestrian crosswalks when stopped."
+    },
+    {
+        "id": "908",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "909",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "910",
+        "rule": "Do not drive under the influence of alcohol or drugs."
+    },
+    {
+        "id": "911",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "912",
+        "rule": "Give right of way to vehicles already in roundabouts."
+    },
+    {
+        "id": "913",
+        "rule": "Keep your vehicle at a safe distance from hazardous materials."
+    },
+    {
+        "id": "914",
+        "rule": "Drive cautiously near construction workers and machinery."
+    },
+    {
+        "id": "915",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "916",
+        "rule": "Obey weight limits on bridges and roads."
+    },
+    {
+        "id": "917",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "918",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "919",
+        "rule": "Do not park in spaces designated for the disabled unless authorized."
+    },
+    {
+        "id": "920",
+        "rule": "Never drive while fatigued or tired."
+    },
+    {
+        "id": "921",
+        "rule": "Adhere to traffic rules when driving in a foreign country."
+    },
+    {
+        "id": "922",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "923",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "924",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "925",
+        "rule": "Always wear a seatbelt while driving."
+    },
+    {
+        "id": "926",
+        "rule": "Use seatbelts and child safety seats for children."
+    },
+    {
+        "id": "927",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "928",
+        "rule": "Obey lane restrictions and special traffic lanes."
+    },
+    {
+        "id": "929",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "930",
+        "rule": "Use caution when driving on winding or narrow roads."
+    },
+    {
+        "id": "931",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "932",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "933",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "934",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "935",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "936",
+        "rule": "Always check your mirrors before changing lanes."
+    },
+    {
+        "id": "937",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "938",
+        "rule": "Avoid driving while distracted by passengers or music."
+    },
+    {
+        "id": "939",
+        "rule": "Never drive in the opposite direction on one-way streets."
+    },
+    {
+        "id": "940",
+        "rule": "Yield to emergency vehicles in an emergency situation."
+    },
+    {
+        "id": "941",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "942",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "943",
+        "rule": "Do not make U-turns in dangerous or prohibited locations."
+    },
+    {
+        "id": "944",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "945",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "946",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "947",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "948",
+        "rule": "Drive carefully in foggy or low-visibility weather conditions."
+    },
+    {
+        "id": "949",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "950",
+        "rule": "Use headlights at night and in low visibility conditions."
+    },
+    {
+        "id": "951",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "952",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "953",
+        "rule": "Adhere to parking restrictions, especially in residential areas."
+    },
+    {
+        "id": "954",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "955",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "956",
+        "rule": "Ensure all lights on your vehicle are functioning properly."
+    },
+    {
+        "id": "957",
+        "rule": "Drive cautiously when approaching intersections."
+    },
+    {
+        "id": "958",
+        "rule": "Drive cautiously when near animals or wildlife on roads."
+    },
+    {
+        "id": "959",
+        "rule": "Be mindful of road hazards such as potholes and debris."
+    },
+    {
+        "id": "960",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "961",
+        "rule": "Drive with both hands on the wheel for better control."
+    },
+    {
+        "id": "962",
+        "rule": "Do not drive with excessive speed in residential areas."
+    },
+    {
+        "id": "963",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "964",
+        "rule": "Do not drive without a valid driver's license and registration."
+    },
+    {
+        "id": "965",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "966",
+        "rule": "Do not use mobile phones while driving."
+    },
+    {
+        "id": "967",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "968",
+        "rule": "Always be aware of construction zones and roadwork."
+    },
+    {
+        "id": "969",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "970",
+        "rule": "Obey traffic signs and signals at all times."
+    },
+    {
+        "id": "971",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "972",
+        "rule": "Follow all road signs indicating detours or roadblocks."
+    },
+    {
+        "id": "973",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "974",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "975",
+        "rule": "Do not make U-turns in dangerous or prohibited locations."
+    },
+    {
+        "id": "976",
+        "rule": "Be cautious in adverse weather conditions, like rain or fog."
+    },
+    {
+        "id": "977",
+        "rule": "Slow down in areas with heavy pedestrian traffic."
+    },
+    {
+        "id": "978",
+        "rule": "Obey parking restrictions and never park illegally."
+    },
+    {
+        "id": "979",
+        "rule": "Never pass other vehicles on the shoulder of the road."
+    },
+    {
+        "id": "980",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "981",
+        "rule": "Ensure all passengers are wearing seatbelts."
+    },
+    {
+        "id": "982",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "983",
+        "rule": "Always signal your intentions when turning."
+    },
+    {
+        "id": "984",
+        "rule": "Always check for other vehicles before merging onto highways."
+    },
+    {
+        "id": "985",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "986",
+        "rule": "Never run red lights or stop signs."
+    },
+    {
+        "id": "987",
+        "rule": "Check your tire pressure regularly for safe driving."
+    },
+    {
+        "id": "988",
+        "rule": "Always stop for school buses with flashing lights."
+    },
+    {
+        "id": "989",
+        "rule": "Always give the right of way to pedestrians at crosswalks."
+    },
+    {
+        "id": "990",
+        "rule": "Always use the horn to alert other drivers when necessary."
+    },
+    {
+        "id": "991",
+        "rule": "Ensure your vehicle is in good condition before long drives."
+    },
+    {
+        "id": "992",
+        "rule": "Avoid sudden lane changes without signaling."
+    },
+    {
+        "id": "993",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "994",
+        "rule": "Do not block intersections when stopped."
+    },
+    {
+        "id": "995",
+        "rule": "Stop at red lights and wait for green."
+    },
+    {
+        "id": "996",
+        "rule": "Maintain a safe distance from other vehicles."
+    },
+    {
+        "id": "997",
+        "rule": "Be cautious when driving near schools and playgrounds."
+    },
+    {
+        "id": "998",
+        "rule": "Do not overtake in no-passing zones."
+    },
+    {
+        "id": "999",
+        "rule": "Always stop at stop signs and give right of way when necessary."
+    },
+    {
+        "id": "1000",
+        "rule": "Always drive within your abilities and the road conditions."
+    }
+]
