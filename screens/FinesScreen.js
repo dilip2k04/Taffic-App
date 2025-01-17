@@ -40,7 +40,12 @@ export default function FinesScreen() {
 
     return (
         <View style={styles.container}>
-            <TextInput style={styles.searchBox} placeholder="Search Traffic Offenses..." value={searchText} onChangeText={setSearchText} />
+            <TextInput
+                style={styles.searchBox}
+                placeholder="Search Traffic Offenses..."
+                value={searchText}
+                onChangeText={setSearchText}
+            />
             
             {/* Location Button */}
             <TouchableOpacity style={styles.locationButton} onPress={fetchLocation}>
@@ -49,8 +54,14 @@ export default function FinesScreen() {
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalScroll}>
                 {categories.map(category => (
-                    <TouchableOpacity key={category} style={[styles.filterButton, selectedCategory === category && styles.selectedButton]} onPress={() => setSelectedCategory(category)}>
-                        <Text style={[styles.filterText, selectedCategory === category && styles.selectedFilterText]}>{category}</Text>
+                    <TouchableOpacity
+                        key={category}
+                        style={[styles.filterButton, selectedCategory === category && styles.selectedButton]}
+                        onPress={() => setSelectedCategory(category)}
+                    >
+                        <Text style={[styles.filterText, selectedCategory === category && styles.selectedFilterText]}>
+                            {category}
+                        </Text>
                     </TouchableOpacity>
                 ))}
             </ScrollView>
@@ -72,7 +83,7 @@ export default function FinesScreen() {
                         <Text style={styles.offense}>{item.offense}</Text>
                         <Text style={styles.fine}>₹{item.fine} | {item.points} Points</Text>
                         <TouchableOpacity onPress={() => toggleFavorite(item)}>
-                            <Text style={styles.favorite}>{favorites.includes(item.id) ? '★' : '☆'}</Text>
+                            <Text style={styles.favorite}>{favorites.includes(item.id) ? '❤️' : '🤍'}</Text>
                         </TouchableOpacity>
                     </TouchableOpacity>
                 )}
@@ -110,17 +121,99 @@ export default function FinesScreen() {
 // Styles
 const styles = StyleSheet.create({
     container: { flex: 1, padding: 20, marginTop: 50 },
-    searchBox: { height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 10, paddingLeft: 10, borderRadius: 5 },
-    locationButton: { backgroundColor: 'green', padding: 10, borderRadius: 5, alignItems: 'center', marginBottom: 10 },
-    buttonText: { color: 'white', fontSize: 16 },
-    filterButton: { padding: 10, borderRadius: 5, marginHorizontal: 5, backgroundColor: '#eee' },
+    searchBox: { 
+        height: 45, 
+        borderColor: '#ddd', 
+        borderWidth: 1, 
+        marginBottom: 10, 
+        paddingLeft: 15, 
+        borderRadius: 25, 
+        shadowColor: "#000", 
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1, 
+        shadowRadius: 5, 
+        elevation: 5 
+    },
+    locationButton: { 
+        backgroundColor: '#4CAF50', 
+        padding: 12, 
+        borderRadius: 25, 
+        alignItems: 'center', 
+        marginBottom: 15, 
+        shadowColor: "#000", 
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1, 
+        shadowRadius: 5, 
+        elevation: 5 
+    },
+    buttonText: { color: 'white', fontSize: 16, fontWeight: 'bold' },
+    filterButton: { 
+        paddingVertical: 12, 
+        paddingHorizontal: 20, 
+        borderRadius: 25, 
+        backgroundColor: '#eee', 
+        marginHorizontal: 8 
+    },
     selectedButton: { backgroundColor: '#007bff' },
-    fineItem: { flexDirection: 'row', justifyContent: 'space-between', padding: 10, borderBottomWidth: 1 },
-    offense: { fontSize: 16, fontWeight: 'bold' },
-    fine: { fontSize: 16, color: 'red' },
-    favorite: { fontSize: 20 },
+    filterText: { fontSize: 16, color: '#555' },
+    selectedFilterText: { color: 'white' },
+    sortContainer: { flexDirection: 'row', marginTop: 10 },
+    sortButton: { 
+        paddingVertical: 12, 
+        paddingHorizontal: 25, 
+        borderRadius: 25, 
+        backgroundColor: '#f1f1f1', 
+        marginRight: 10 
+    },
+    selectedSort: { backgroundColor: '#007bff' },
+    sortText: { fontSize: 16, color: '#555' },
+    fineItem: { 
+        flexDirection: 'row', 
+        justifyContent: 'space-between', 
+        backgroundColor: '#fff', 
+        borderRadius: 15, 
+        padding: 15, 
+        marginVertical: 5, 
+        shadowColor: "#000", 
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1, 
+        shadowRadius: 5, 
+        elevation: 5 
+    },
+    offense: { fontSize: 18, fontWeight: 'bold' },
+    fine: { fontSize: 16, color: '#d9534f' },
+    favorite: { fontSize: 24 },
     modalContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.5)' },
-    payButton: { backgroundColor: 'blue', padding: 10, borderRadius: 5, alignItems: 'center', marginBottom: 10 },
-    reportButton: { backgroundColor: 'red', padding: 10, borderRadius: 5, alignItems: 'center', marginBottom: 10 },
-    closeButton: { backgroundColor: 'black', padding: 10, borderRadius: 5, alignItems: 'center' }
+    modalContent: { 
+        width: 300, 
+        backgroundColor: 'white', 
+        borderRadius: 20, 
+        padding: 20, 
+        alignItems: 'center' 
+    },
+    modalTitle: { fontSize: 20, fontWeight: 'bold', marginBottom: 10 },
+    modalText: { fontSize: 16, marginBottom: 10 },
+    modalFine: { fontSize: 16, color: '#d9534f', marginBottom: 10 },
+    payButton: { 
+        backgroundColor: '#007bff', 
+        padding: 12, 
+        borderRadius: 25, 
+        marginBottom: 10, 
+        alignItems: 'center' 
+    },
+    reportButton: { 
+        backgroundColor: '#d9534f', 
+        padding: 12, 
+        borderRadius: 25, 
+        marginBottom: 10, 
+        alignItems: 'center' 
+    },
+    closeButton: { 
+        backgroundColor: '#333', 
+        padding: 12, 
+        borderRadius: 25, 
+        marginTop: 15, 
+        alignItems: 'center' 
+    },
+    closeText: { color: 'white', fontSize: 16, fontWeight: 'bold' }
 });
