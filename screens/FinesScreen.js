@@ -1,146 +1,209 @@
-import React, { useState } from 'react';
-import { View, Text, FlatList, StyleSheet, TextInput, TouchableOpacity, Modal, ScrollView, Alert } from 'react-native';
-import * as Linking from 'expo-linking';
-import * as Location from 'expo-location';
+import React, { useState, useEffect } from 'react';
+import { View, Text, FlatList, TouchableOpacity, TextInput, StyleSheet, Share, Switch } from 'react-native';
+import finesData from '../json files/trafficFines.json'; // Ensure correct path
 
-const finesData = require('../json files/trafficFines');
-
-export default function FinesScreen() {
+const FinesScreen = () => {
     const [searchText, setSearchText] = useState('');
-    const [selectedCategory, setSelectedCategory] = useState('All');
-    const [sortBy, setSortBy] = useState('offense');
-    const [modalVisible, setModalVisible] = useState(false);
-    const [selectedFine, setSelectedFine] = useState(null);
+    const [filteredFines, setFilteredFines] = useState(finesData);
     const [favorites, setFavorites] = useState([]);
-    const [location, setLocation] = useState(null);
+    const [darkMode, setDarkMode] = useState(false);
+    const [sortOrder, setSortOrder] = useState('asc'); // Sort order state
+    const [categoryFilter, setCategoryFilter] = useState('All'); // Category filter state
 
-    const categories = ['All', 'Severe', 'Parking', 'Distraction', 'Safety', 'Speeding', 'Legal'];
+    useEffect(() => {
+        setFilteredFines(finesData);
+    }, []);
 
-    // Fetch User Location
-    const fetchLocation = async () => {
-        let { status } = await Location.requestForegroundPermissionsAsync();
-        if (status !== 'granted') {
-            Alert.alert('Permission Denied', 'Location access is required to show local fines.');
-            return;
+    const toggleFavorite = (fineId) => {
+        setFavorites(prevFavorites =>
+            prevFavorites.includes(fineId) ? prevFavorites.filter(id => id !== fineId) : [...prevFavorites, fineId]
+        );
+    };
+
+    const searchFines = (text) => {
+        setSearchText(text);
+        if (text.trim() === '') {
+            setFilteredFines(finesData);
+        } else {
+            const filtered = finesData.filter(fine =>
+                fine.offense && fine.offense.toLowerCase().includes(text.toLowerCase())
+            );
+            setFilteredFines(filtered);
         }
-        let locationData = await Location.getCurrentPositionAsync({});
-        setLocation(locationData.coords);
     };
 
-    // Toggle Favorite
-    const toggleFavorite = (fine) => {
-        setFavorites(prev => prev.includes(fine.id) ? prev.filter(id => id !== fine.id) : [...prev, fine.id]);
+    const shareFineDetails = async (fine) => {
+        try {
+            await Share.share({
+                message: `FINE NAME : ${fine.category}\nDESCRIPTION : ${fine.description}\nOFFENCE : ${fine.offense}\nAMOUNT : ₹${fine.fine}`
+            });
+        } catch (error) {
+            console.log("Error sharing fine details: ", error);
+        }
     };
 
-    // Filter and sort fines
-    const filteredFines = finesData
-        .filter(fine => (selectedCategory === 'All' || fine.category === selectedCategory))
-        .filter(fine => fine.offense.toLowerCase().includes(searchText.toLowerCase()))
-        .sort((a, b) => sortBy === 'offense' ? a.offense.localeCompare(b.offense) : a.fine - b.fine);
+    const sortFines = () => {
+        const sorted = [...filteredFines].sort((a, b) => {
+            if (sortOrder === 'asc') {
+                return a.fine - b.fine;
+            } else {
+                return b.fine - a.fine;
+            }
+        });
+        setFilteredFines(sorted);
+        setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+    };
+
+    const applyCategoryFilter = (category) => {
+        setCategoryFilter(category);
+        if (category === 'All') {
+            setFilteredFines(finesData);
+        } else {
+            const filtered = finesData.filter(fine => fine.category === category);
+            setFilteredFines(filtered);
+        }
+    };
 
     return (
-        <View style={styles.container}>
-            <TextInput style={styles.searchBox} placeholder="Search Traffic Offenses..." value={searchText} onChangeText={setSearchText} />
+        <View style={[styles.container, darkMode && styles.darkContainer]}>
+            <View style={styles.topBar}>
+                <Text style={[styles.title, darkMode && styles.darkText]}>Traffic Fines</Text>
+                <Switch
+                    value={darkMode}
+                    onValueChange={() => setDarkMode(!darkMode)}
+                />
+            </View>
 
-            {/* Location Button */}
-            <TouchableOpacity style={styles.locationButton} onPress={fetchLocation}>
-                <Text style={styles.buttonText}>Use My Location</Text>
-            </TouchableOpacity>
+            <TextInput
+                style={[styles.searchInput, darkMode && styles.darkSearchInput]}
+                placeholder="Search fines..."
+                placeholderTextColor={darkMode ? '#ccc' : '#000'}
+                value={searchText}
+                onChangeText={searchFines}
+            />
 
-            {/* Category Filter */}
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalScroll}>
-                {categories.map(category => (
-                    <TouchableOpacity
-                        key={category}
-                        style={[styles.filterButton, selectedCategory === category && styles.selectedButton]}
-                        onPress={() => setSelectedCategory(category)}
-                    >
-                        <Text style={[styles.filterText, selectedCategory === category && styles.selectedFilterText]}>
+            {/* Filter & Sorting Options */}
+            <View style={styles.filterBar}>
+                <TouchableOpacity onPress={sortFines} style={styles.sortButton}>
+                    <Text style={styles.filterText}>Sort by Fine {sortOrder === 'asc' ? '↑' : '↓'}</Text>
+                </TouchableOpacity>
+
+                {['All', 'Safety', 'Parking', 'Speeding', 'Severe'].map(category => (
+                    <TouchableOpacity key={category} onPress={() => applyCategoryFilter(category)}>
+                        <Text style={[styles.filterText, categoryFilter === category && styles.selectedFilter]}>
                             {category}
                         </Text>
                     </TouchableOpacity>
                 ))}
-            </ScrollView>
-
-            {/* Sort Buttons */}
-            <View style={styles.sortContainer}>
-                <TouchableOpacity onPress={() => setSortBy('offense')} style={[styles.sortButton, sortBy === 'offense' && styles.selectedSort]}>
-                    <Text style={styles.sortText}>Sort by Name</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => setSortBy('fine')} style={[styles.sortButton, sortBy === 'fine' && styles.selectedSort]}>
-                    <Text style={styles.sortText}>Sort by Fine</Text>
-                </TouchableOpacity>
             </View>
 
-            {/* Fines List */}
             <FlatList
                 data={filteredFines}
-                keyExtractor={(item) => item.id}
+                keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => (
-                    <TouchableOpacity style={styles.fineItem} onPress={() => { setSelectedFine(item); setModalVisible(true); }}>
-                        <Text style={styles.offense}>{item.offense}</Text>
-                        <Text style={styles.fine}>₹{item.fine}</Text> {/* Points removed here */}
-                        <TouchableOpacity onPress={() => toggleFavorite(item)}>
-                            <Text style={styles.favorite}>{favorites.includes(item.id) ? '★' : '☆'}</Text>
-                        </TouchableOpacity>
-                    </TouchableOpacity>
+                    <View style={[styles.fineItem, darkMode && styles.darkFineItem]}>
+                        <Text style={[styles.fineoffence, darkMode && styles.darkText]}>{item.offense}</Text>
+                        <Text style={[styles.fineName, darkMode && styles.darkText]}>{item.name}</Text>
+                        <Text style={[styles.fineDescription, darkMode && styles.darkText]}>{item.description}</Text>
+                        <Text style={[styles.fineAmount, darkMode && styles.darkText]}>Amount: ₹{item.fine}</Text>
+                        <View style={styles.buttonsContainer}>
+                            <TouchableOpacity onPress={() => toggleFavorite(item.id)}>
+                                <Text style={styles.favoriteButton}>{favorites.includes(item.id) ? '★' : '☆'}</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => shareFineDetails(item)}>
+                                <Text style={styles.shareButton}>Share</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
                 )}
             />
-
-            {/* Fine Details Modal */}
-            <Modal visible={modalVisible} animationType="slide" transparent>
-                <View style={styles.modalContainer}>
-                    <View style={styles.modalContent}>
-                        <Text style={styles.modalTitle}>{selectedFine?.offense}</Text>
-                        <Text style={styles.modalText}>{selectedFine?.description}</Text>
-                        <Text style={styles.modalFine}>Fine: ₹{selectedFine?.fine}</Text>
-                        
-                        {/* Pay Fine Button */}
-                        <TouchableOpacity onPress={() => Linking.openURL('https://www.paypal.com/checkoutnow')} style={styles.payButton}>
-                            <Text style={styles.buttonText}>Pay Fine Online</Text>
-                        </TouchableOpacity>
-
-                        {/* Report Issue Button */}
-                        <TouchableOpacity onPress={() => Alert.alert('Report Sent', 'Your issue has been reported.')} style={styles.reportButton}>
-                            <Text style={styles.buttonText}>Report an Issue</Text>
-                        </TouchableOpacity>
-
-                        <TouchableOpacity onPress={() => setModalVisible(false)} style={styles.closeButton}>
-                            <Text style={styles.closeText}>Close</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-            </Modal>
         </View>
     );
-}
+};
 
-// Styles
 const styles = StyleSheet.create({
-    container: { flex: 1, padding: 20, marginTop: 50 },
-    searchBox: { height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 10, paddingLeft: 10, borderRadius: 20, backgroundColor: '#f7f7f7' },
-    locationButton: { backgroundColor: '#28a745', padding: 12, borderRadius: 25, alignItems: 'center', marginBottom: 15 },
-    buttonText: { color: 'white', fontSize: 16, fontWeight: 'bold' },
-    horizontalScroll: { marginBottom: 10 },
-    filterButton: { paddingVertical: 10, paddingHorizontal: 20, borderRadius: 25, backgroundColor: '#e0e0e0', marginHorizontal: 8 },
-    selectedButton: { backgroundColor: '#007bff' },
-    filterText: { color: '#333', fontSize: 14, fontWeight: 'bold' },
-    selectedFilterText: { color: 'white' },
-    sortContainer: { flexDirection: 'row', justifyContent: 'space-around', marginBottom: 20 },
-    sortButton: { paddingVertical: 10, paddingHorizontal: 20, borderRadius: 20, backgroundColor: '#f0f0f0' },
-    selectedSort: { backgroundColor: '#007bff' },
-    sortText: { color: '#333', fontSize: 14, fontWeight: 'bold' },
-    fineItem: { flexDirection: 'row', justifyContent: 'space-between', padding: 15, marginVertical: 8, borderRadius: 10, backgroundColor: '#fff', elevation: 3 },
-    offense: { fontSize: 16, fontWeight: 'bold', color: '#333' },
-    fine: { fontSize: 14, color: 'red' },
-    favorite: { fontSize: 20 },
-    modalContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.5)' },
-    modalContent: { width: '100%', backgroundColor: 'white', borderRadius: 10, padding: 20 },
-    modalTitle: { fontSize: 22, fontWeight: 'bold', marginBottom: 10 },
-    modalText: { fontSize: 16, color: '#555', marginBottom: 20 },
-    modalFine: { fontSize: 16, marginBottom: 10 },
-    payButton: { backgroundColor: 'blue', padding: 12, borderRadius: 25, alignItems: 'center', marginBottom: 10 },
-    reportButton: { backgroundColor: 'red', padding: 12, borderRadius: 25, alignItems: 'center', marginBottom: 10 },
-    closeButton: { backgroundColor: '#333', padding: 12, borderRadius: 25, alignItems: 'center' },
-    closeText: { color: 'white', fontSize: 16 }
+    container: {
+        flex: 1,
+        padding: 10,
+        backgroundColor: 'white',
+        marginTop: 20,
+    },
+    darkContainer: {
+        backgroundColor: '#121212',
+    },
+    topBar: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
+    title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
+    darkText: {
+        color: 'white',
+    },
+    searchInput: {
+        height: 40,
+        borderWidth: 1,
+        padding: 8,
+        marginBottom: 10,
+        borderRadius: 5,
+        backgroundColor: 'white',
+    },
+    darkSearchInput: {
+        backgroundColor: '#333',
+        color: 'white',
+        borderColor: '#555',
+    },
+    filterBar: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        marginBottom: 10,
+    },
+    filterText: {
+        fontSize: 14,
+        padding: 5,
+    },
+    selectedFilter: {
+        fontWeight: 'bold',
+        textDecorationLine: 'underline',
+    },
+    fineItem: {
+        padding: 15,
+        marginBottom: 10,
+        borderRadius: 5,
+        backgroundColor: '#f9f9f9',
+    },
+    darkFineItem: {
+        backgroundColor: '#333',
+    },
+    fineName: {
+        fontWeight: 'bold',
+        fontSize: 16,
+    },
+    fineDescription: {
+        color: 'gray',
+    },
+    fineAmount: {
+        marginTop: 5,
+        fontWeight: 'bold',
+    },
+    buttonsContainer: {
+        flexDirection: 'row',
+        marginTop: 10,
+        justifyContent: 'space-between',
+        gap: 250,
+    },
+    fineoffence: { fontWeight: 'bold' },
+    favoriteButton: {
+        fontSize: 20,
+        color: 'gold',
+    },
+    shareButton: {
+        color: 'orange',
+    },
 });
+
+export default FinesScreen;
