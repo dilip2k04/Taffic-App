@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, FlatList, StyleSheet, TextInput, TouchableOpacity, Modal, ScrollView } from 'react-native';
+import { View, Text, FlatList, StyleSheet, TextInput, TouchableOpacity, Modal, ScrollView, Alert } from 'react-native';
+import * as Linking from 'expo-linking';
+import * as Location from 'expo-location';
 
-// Import the JSON file
 const finesData = require('../json files/trafficFines');
 
 export default function FinesScreen() {
@@ -10,8 +11,26 @@ export default function FinesScreen() {
     const [sortBy, setSortBy] = useState('offense');
     const [modalVisible, setModalVisible] = useState(false);
     const [selectedFine, setSelectedFine] = useState(null);
+    const [favorites, setFavorites] = useState([]);
+    const [location, setLocation] = useState(null);
 
     const categories = ['All', 'Driving Violation', 'Parking Violation', 'Documentation Issue', 'Safety', 'Speeding', 'Legal'];
+    
+    // Fetch User Location
+    const fetchLocation = async () => {
+        let { status } = await Location.requestForegroundPermissionsAsync();
+        if (status !== 'granted') {
+            Alert.alert('Permission Denied', 'Location access is required to show local fines.');
+            return;
+        }
+        let locationData = await Location.getCurrentPositionAsync({});
+        setLocation(locationData.coords);
+    };
+
+    // Toggle Favorite
+    const toggleFavorite = (fine) => {
+        setFavorites(prev => prev.includes(fine.id) ? prev.filter(id => id !== fine.id) : [...prev, fine.id]);
+    };
 
     // Filter and sort fines
     const filteredFines = finesData
@@ -21,27 +40,21 @@ export default function FinesScreen() {
 
     return (
         <View style={styles.container}>
-            {/* Search Box */}
-            <TextInput
-                style={styles.searchBox}
-                placeholder="Search Traffic Offenses..."
-                value={searchText}
-                onChangeText={setSearchText}
-            />
+            <TextInput style={styles.searchBox} placeholder="Search Traffic Offenses..." value={searchText} onChangeText={setSearchText} />
+            
+            {/* Location Button */}
+            <TouchableOpacity style={styles.locationButton} onPress={fetchLocation}>
+                <Text style={styles.buttonText}>Use My Location</Text>
+            </TouchableOpacity>
 
-            {/* Horizontal ScrollView for Category Filter */}
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalScroll}>
                 {categories.map(category => (
-                    <TouchableOpacity
-                        key={category}
-                        style={[styles.filterButton, selectedCategory === category && styles.selectedButton]}
-                        onPress={() => setSelectedCategory(category)}>
+                    <TouchableOpacity key={category} style={[styles.filterButton, selectedCategory === category && styles.selectedButton]} onPress={() => setSelectedCategory(category)}>
                         <Text style={[styles.filterText, selectedCategory === category && styles.selectedFilterText]}>{category}</Text>
                     </TouchableOpacity>
                 ))}
             </ScrollView>
 
-            {/* Sorting Options */}
             <View style={styles.sortContainer}>
                 <TouchableOpacity onPress={() => setSortBy('offense')} style={[styles.sortButton, sortBy === 'offense' && styles.selectedSort]}>
                     <Text style={styles.sortText}>Sort by Name</Text>
@@ -51,14 +64,16 @@ export default function FinesScreen() {
                 </TouchableOpacity>
             </View>
 
-            {/* Fines List */}
             <FlatList
                 data={filteredFines}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => (
                     <TouchableOpacity style={styles.fineItem} onPress={() => { setSelectedFine(item); setModalVisible(true); }}>
                         <Text style={styles.offense}>{item.offense}</Text>
-                        <Text style={styles.fine}>₹{item.fine}</Text>
+                        <Text style={styles.fine}>₹{item.fine} | {item.points} Points</Text>
+                        <TouchableOpacity onPress={() => toggleFavorite(item)}>
+                            <Text style={styles.favorite}>{favorites.includes(item.id) ? '★' : '☆'}</Text>
+                        </TouchableOpacity>
                     </TouchableOpacity>
                 )}
             />
@@ -70,6 +85,18 @@ export default function FinesScreen() {
                         <Text style={styles.modalTitle}>{selectedFine?.offense}</Text>
                         <Text style={styles.modalText}>{selectedFine?.description}</Text>
                         <Text style={styles.modalFine}>Fine: ₹{selectedFine?.fine}</Text>
+                        <Text style={styles.modalFine}>Penalty Points: {selectedFine?.points}</Text>
+                        
+                        {/* Pay Fine Button */}
+                        <TouchableOpacity onPress={() => Linking.openURL('https://govfinepayment.com')} style={styles.payButton}>
+                            <Text style={styles.buttonText}>Pay Fine Online</Text>
+                        </TouchableOpacity>
+
+                        {/* Report Issue Button */}
+                        <TouchableOpacity onPress={() => Alert.alert('Report Sent', 'Your issue has been reported.')} style={styles.reportButton}>
+                            <Text style={styles.buttonText}>Report an Issue</Text>
+                        </TouchableOpacity>
+
                         <TouchableOpacity onPress={() => setModalVisible(false)} style={styles.closeButton}>
                             <Text style={styles.closeText}>Close</Text>
                         </TouchableOpacity>
@@ -84,31 +111,16 @@ export default function FinesScreen() {
 const styles = StyleSheet.create({
     container: { flex: 1, padding: 20, marginTop: 50 },
     searchBox: { height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 10, paddingLeft: 10, borderRadius: 5 },
-    horizontalScroll: { marginBottom: 10 },
-    filterButton: { 
-        paddingVertical: 10, 
-        paddingHorizontal: 15, 
-        borderWidth: 1, 
-        borderRadius: 5, 
-        marginHorizontal: 5, 
-        backgroundColor: '#eee',
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
+    locationButton: { backgroundColor: 'green', padding: 10, borderRadius: 5, alignItems: 'center', marginBottom: 10 },
+    buttonText: { color: 'white', fontSize: 16 },
+    filterButton: { padding: 10, borderRadius: 5, marginHorizontal: 5, backgroundColor: '#eee' },
     selectedButton: { backgroundColor: '#007bff' },
-    filterText: { color: '#000' },
-    selectedFilterText: { color: '#fff' },
-    sortContainer: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10 },
-    sortText: { fontSize: 16, color: '#555' },
-    selectedSort: { fontWeight: 'bold', color: '#000' },
-    fineItem: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10, padding: 10, borderBottomWidth: 1, borderColor: '#ccc' },
+    fineItem: { flexDirection: 'row', justifyContent: 'space-between', padding: 10, borderBottomWidth: 1 },
     offense: { fontSize: 16, fontWeight: 'bold' },
     fine: { fontSize: 16, color: 'red' },
+    favorite: { fontSize: 20 },
     modalContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.5)' },
-    modalContent: { width: '80%', padding: 20, backgroundColor: 'white', borderRadius: 10 },
-    modalTitle: { fontSize: 20, fontWeight: 'bold', marginBottom: 10 },
-    modalText: { fontSize: 16, marginBottom: 10 },
-    modalFine: { fontSize: 18, fontWeight: 'bold', color: 'red' },
-    closeButton: { marginTop: 10, padding: 10, backgroundColor: 'black', borderRadius: 5, alignItems: 'center' },
-    closeText: { color: 'white', fontSize: 16 }
+    payButton: { backgroundColor: 'blue', padding: 10, borderRadius: 5, alignItems: 'center', marginBottom: 10 },
+    reportButton: { backgroundColor: 'red', padding: 10, borderRadius: 5, alignItems: 'center', marginBottom: 10 },
+    closeButton: { backgroundColor: 'black', padding: 10, borderRadius: 5, alignItems: 'center' }
 });
