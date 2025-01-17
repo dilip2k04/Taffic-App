@@ -14,8 +14,8 @@ export default function FinesScreen() {
     const [favorites, setFavorites] = useState([]);
     const [location, setLocation] = useState(null);
 
-    const categories = ['All', 'Driving Violation', 'Parking Violation', 'Documentation Issue', 'Safety', 'Speeding', 'Legal'];
-    
+    const categories = ['All', 'Severe', 'Parking', 'Distraction', 'Safety', 'Speeding', 'Legal'];
+
     // Fetch User Location
     const fetchLocation = async () => {
         let { status } = await Location.requestForegroundPermissionsAsync();
@@ -40,18 +40,14 @@ export default function FinesScreen() {
 
     return (
         <View style={styles.container}>
-            <TextInput
-                style={styles.searchBox}
-                placeholder="Search Traffic Offenses..."
-                value={searchText}
-                onChangeText={setSearchText}
-            />
-            
+            <TextInput style={styles.searchBox} placeholder="Search Traffic Offenses..." value={searchText} onChangeText={setSearchText} />
+
             {/* Location Button */}
             <TouchableOpacity style={styles.locationButton} onPress={fetchLocation}>
                 <Text style={styles.buttonText}>Use My Location</Text>
             </TouchableOpacity>
 
+            {/* Category Filter */}
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalScroll}>
                 {categories.map(category => (
                     <TouchableOpacity
@@ -66,6 +62,7 @@ export default function FinesScreen() {
                 ))}
             </ScrollView>
 
+            {/* Sort Buttons */}
             <View style={styles.sortContainer}>
                 <TouchableOpacity onPress={() => setSortBy('offense')} style={[styles.sortButton, sortBy === 'offense' && styles.selectedSort]}>
                     <Text style={styles.sortText}>Sort by Name</Text>
@@ -75,15 +72,16 @@ export default function FinesScreen() {
                 </TouchableOpacity>
             </View>
 
+            {/* Fines List */}
             <FlatList
                 data={filteredFines}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => (
                     <TouchableOpacity style={styles.fineItem} onPress={() => { setSelectedFine(item); setModalVisible(true); }}>
                         <Text style={styles.offense}>{item.offense}</Text>
-                        <Text style={styles.fine}>₹{item.fine} | {item.points} Points</Text>
+                        <Text style={styles.fine}>₹{item.fine}</Text> {/* Points removed here */}
                         <TouchableOpacity onPress={() => toggleFavorite(item)}>
-                            <Text style={styles.favorite}>{favorites.includes(item.id) ? '❤️' : '🤍'}</Text>
+                            <Text style={styles.favorite}>{favorites.includes(item.id) ? '★' : '☆'}</Text>
                         </TouchableOpacity>
                     </TouchableOpacity>
                 )}
@@ -96,10 +94,9 @@ export default function FinesScreen() {
                         <Text style={styles.modalTitle}>{selectedFine?.offense}</Text>
                         <Text style={styles.modalText}>{selectedFine?.description}</Text>
                         <Text style={styles.modalFine}>Fine: ₹{selectedFine?.fine}</Text>
-                        <Text style={styles.modalFine}>Penalty Points: {selectedFine?.points}</Text>
                         
                         {/* Pay Fine Button */}
-                        <TouchableOpacity onPress={() => Linking.openURL('https://govfinepayment.com')} style={styles.payButton}>
+                        <TouchableOpacity onPress={() => Linking.openURL('https://www.paypal.com/checkoutnow')} style={styles.payButton}>
                             <Text style={styles.buttonText}>Pay Fine Online</Text>
                         </TouchableOpacity>
 
@@ -121,99 +118,29 @@ export default function FinesScreen() {
 // Styles
 const styles = StyleSheet.create({
     container: { flex: 1, padding: 20, marginTop: 50 },
-    searchBox: { 
-        height: 45, 
-        borderColor: '#ddd', 
-        borderWidth: 1, 
-        marginBottom: 10, 
-        paddingLeft: 15, 
-        borderRadius: 25, 
-        shadowColor: "#000", 
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.1, 
-        shadowRadius: 5, 
-        elevation: 5 
-    },
-    locationButton: { 
-        backgroundColor: '#4CAF50', 
-        padding: 12, 
-        borderRadius: 25, 
-        alignItems: 'center', 
-        marginBottom: 15, 
-        shadowColor: "#000", 
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.1, 
-        shadowRadius: 5, 
-        elevation: 5 
-    },
+    searchBox: { height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 10, paddingLeft: 10, borderRadius: 20, backgroundColor: '#f7f7f7' },
+    locationButton: { backgroundColor: '#28a745', padding: 12, borderRadius: 25, alignItems: 'center', marginBottom: 15 },
     buttonText: { color: 'white', fontSize: 16, fontWeight: 'bold' },
-    filterButton: { 
-        paddingVertical: 12, 
-        paddingHorizontal: 20, 
-        borderRadius: 25, 
-        backgroundColor: '#eee', 
-        marginHorizontal: 8 
-    },
+    horizontalScroll: { marginBottom: 10 },
+    filterButton: { paddingVertical: 10, paddingHorizontal: 20, borderRadius: 25, backgroundColor: '#e0e0e0', marginHorizontal: 8 },
     selectedButton: { backgroundColor: '#007bff' },
-    filterText: { fontSize: 16, color: '#555' },
+    filterText: { color: '#333', fontSize: 14, fontWeight: 'bold' },
     selectedFilterText: { color: 'white' },
-    sortContainer: { flexDirection: 'row', marginTop: 10 },
-    sortButton: { 
-        paddingVertical: 12, 
-        paddingHorizontal: 25, 
-        borderRadius: 25, 
-        backgroundColor: '#f1f1f1', 
-        marginRight: 10 
-    },
+    sortContainer: { flexDirection: 'row', justifyContent: 'space-around', marginBottom: 20 },
+    sortButton: { paddingVertical: 10, paddingHorizontal: 20, borderRadius: 20, backgroundColor: '#f0f0f0' },
     selectedSort: { backgroundColor: '#007bff' },
-    sortText: { fontSize: 16, color: '#555' },
-    fineItem: { 
-        flexDirection: 'row', 
-        justifyContent: 'space-between', 
-        backgroundColor: '#fff', 
-        borderRadius: 15, 
-        padding: 15, 
-        marginVertical: 5, 
-        shadowColor: "#000", 
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.1, 
-        shadowRadius: 5, 
-        elevation: 5 
-    },
-    offense: { fontSize: 18, fontWeight: 'bold' },
-    fine: { fontSize: 16, color: '#d9534f' },
-    favorite: { fontSize: 24 },
+    sortText: { color: '#333', fontSize: 14, fontWeight: 'bold' },
+    fineItem: { flexDirection: 'row', justifyContent: 'space-between', padding: 15, marginVertical: 8, borderRadius: 10, backgroundColor: '#fff', elevation: 3 },
+    offense: { fontSize: 16, fontWeight: 'bold', color: '#333' },
+    fine: { fontSize: 14, color: 'red' },
+    favorite: { fontSize: 20 },
     modalContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.5)' },
-    modalContent: { 
-        width: 300, 
-        backgroundColor: 'white', 
-        borderRadius: 20, 
-        padding: 20, 
-        alignItems: 'center' 
-    },
-    modalTitle: { fontSize: 20, fontWeight: 'bold', marginBottom: 10 },
-    modalText: { fontSize: 16, marginBottom: 10 },
-    modalFine: { fontSize: 16, color: '#d9534f', marginBottom: 10 },
-    payButton: { 
-        backgroundColor: '#007bff', 
-        padding: 12, 
-        borderRadius: 25, 
-        marginBottom: 10, 
-        alignItems: 'center' 
-    },
-    reportButton: { 
-        backgroundColor: '#d9534f', 
-        padding: 12, 
-        borderRadius: 25, 
-        marginBottom: 10, 
-        alignItems: 'center' 
-    },
-    closeButton: { 
-        backgroundColor: '#333', 
-        padding: 12, 
-        borderRadius: 25, 
-        marginTop: 15, 
-        alignItems: 'center' 
-    },
-    closeText: { color: 'white', fontSize: 16, fontWeight: 'bold' }
+    modalContent: { width: '100%', backgroundColor: 'white', borderRadius: 10, padding: 20 },
+    modalTitle: { fontSize: 22, fontWeight: 'bold', marginBottom: 10 },
+    modalText: { fontSize: 16, color: '#555', marginBottom: 20 },
+    modalFine: { fontSize: 16, marginBottom: 10 },
+    payButton: { backgroundColor: 'blue', padding: 12, borderRadius: 25, alignItems: 'center', marginBottom: 10 },
+    reportButton: { backgroundColor: 'red', padding: 12, borderRadius: 25, alignItems: 'center', marginBottom: 10 },
+    closeButton: { backgroundColor: '#333', padding: 12, borderRadius: 25, alignItems: 'center' },
+    closeText: { color: 'white', fontSize: 16 }
 });
