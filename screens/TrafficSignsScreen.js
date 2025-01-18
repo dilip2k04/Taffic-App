@@ -86,7 +86,7 @@ export default function TrafficSignsScreen() {
 // Styles
 const styles = StyleSheet.create({
     container: { flex: 1, padding: 20, backgroundColor: '#f8f9fa', marginTop: 50 },
-    searchBox: { height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 10, paddingLeft: 10, borderRadius: 5 },
+    searchBox: { height: 40, borderColor: 'gray', padding: 20, borderWidth: 1, marginBottom: 10, paddingLeft: 10, borderRadius: 5 },
     signContainer: { backgroundColor: '#ffffff', padding: 10, marginVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: '#ccc', alignItems: 'center' },
     signImage: { width: 80, height: 80, marginBottom: 10 },
     signName: { fontSize: 18, fontWeight: 'bold', color: '#333' },

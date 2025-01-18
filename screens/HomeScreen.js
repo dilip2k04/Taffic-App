@@ -83,7 +83,7 @@ export default function HomeScreen() {
 // Styles
 const styles = StyleSheet.create({
     container: { flex: 1, padding: 20, backgroundColor: '#f8f9fa', marginTop: 50 },
-    searchBox: { height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 10, paddingLeft: 10, borderRadius: 5 },
+    searchBox: { height: 40, borderColor: 'gray', borderWidth: 1, padding: 20, marginBottom: 10, paddingLeft: 10, borderRadius: 5 },
     ruleContainer: { backgroundColor: '#ffffff', padding: 10, marginVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: '#ccc' },
     ruleTitle: { fontSize: 18, fontWeight: 'bold', color: '#333' },
     ruleDescription: { fontSize: 14, color: '#555' },
