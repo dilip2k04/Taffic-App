@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, FlatList, StyleSheet, ActivityIndicator, Modal, TouchableOpacity } from 'react-native';
-
+ 
 // Load JSON file
 const trafficRulesJson = require('../json files/trafficRules.json');
 

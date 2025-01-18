@@ -49,6 +49,7 @@ export default function TrafficSignsScreen() {
                     data={filteredSigns}
                     keyExtractor={(item) => item.id.toString()}
                     renderItem={({ item }) => (
+                        console.log(item),
                         <TouchableOpacity onPress={() => openModal(item)} style={styles.signContainer}>
                             <Image source={item.image} style={styles.signImage} />
                             <Text style={styles.signName}>{item.name}</Text>

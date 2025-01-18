@@ -31,7 +31,10 @@
     "react-native-screens": "~4.4.0",
     "react-navigation": "^4.4.4",
     "react-navigation-stack": "^2.10.4",
-    "trafficapp": "file:"
+    "trafficapp": "file:",
+    "react-dom": "18.3.1",
+    "react-native-web": "~0.19.13",
+    "@expo/metro-runtime": "~4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
