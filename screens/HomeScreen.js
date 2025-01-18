@@ -70,6 +70,42 @@ export default function HomeScreen() {
         }
     };
 
+    if (filteredRules.length == 0) {
+        return (
+            <View
+                style={[
+                    styles.container,
+                    { backgroundColor: isDarkMode ? '#121212' : '#f8f9fa' },
+                ]}
+            >
+                <View style={styles.header}>
+                    <Text style={styles.title}>{'Traffic Rules'}</Text>
+                    <Switch
+                        value={isDarkMode}
+                        onValueChange={toggleDarkMode}
+                        thumbColor={isDarkMode ? '#f5dd4b' : '#f4f3f4'}
+                        trackColor={{ false: '#767577', true: '#81b0ff' }}
+                    />
+                </View>
+
+                <TextInput
+                    style={[
+                        styles.searchBox,
+                        { backgroundColor: isDarkMode ? '#333' : '#fff', color: isDarkMode ? '#fff' : '#000' },
+                    ]}
+                    placeholder="Search Traffic Rules..."
+                    placeholderTextColor={isDarkMode ? '#aaa' : '#000'}
+                    value={searchText}
+                    onChangeText={setSearchText}
+                />
+                <Text style={{ textAlign: 'center', marginTop: 200, fontSize: 20 }}>Rules yet to be updated...</Text>
+
+            </View>
+        )
+    }
+
+
+
     return (
         <View
             style={[
@@ -78,7 +114,7 @@ export default function HomeScreen() {
             ]}
         >
             <View style={styles.header}>
-                <Text style={styles.title}>Traffic Rules</Text>
+                <Text style={styles.title}>{'Traffic Rules'}</Text>
                 <Switch
                     value={isDarkMode}
                     onValueChange={toggleDarkMode}
@@ -185,9 +221,9 @@ const styles = StyleSheet.create({
     header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },
     title: { fontSize: 24, fontWeight: 'bold', color: '#ccc' },
     searchBox: { height: 40, borderRadius: 5, marginBottom: 10, paddingLeft: 10, borderWidth: 1 },
-    ruleContainer: { padding: 10, marginVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: 'black',height:90 },
+    ruleContainer: { padding: 10, marginVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: 'black', height: 'auto' },
     ruleTitle: { fontSize: 18, fontWeight: 'bold' },
-    ruleDescription: { fontSize: 14, marginBottom: 10,marginTop:10 },
+    ruleDescription: { fontSize: 14, marginBottom: 10, marginTop: 10 },
     favoriteButton: { color: 'orange', fontSize: 16 },
     modalOverlay: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)' },
     modalContainer: { padding: 20, borderRadius: 10, width: '90%', height: 'full' },

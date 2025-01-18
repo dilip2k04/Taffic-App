@@ -48,6 +48,27 @@ export default function TrafficSignsScreen() {
 
     const isFavorite = (signId) => favorites.includes(signId);
 
+    if(filteredSigns.length === 0) {
+        return <View style={[styles.container, darkMode && styles.darkContainer]}>
+            <View style={styles.header}>
+                <Text style={[styles.title, darkMode && styles.darkTitle]}>Traffic Signs</Text>
+                <Switch
+                    value={darkMode}
+                    onValueChange={setDarkMode}
+                    trackColor={{ false: '#ccc', true: '#333' }}
+                    thumbColor={darkMode ? '#007bff' : '#f4f3f4'}
+                />
+            </View>
+            <TextInput
+                style={[styles.searchBox, darkMode && styles.darkSearchBox]}
+                placeholder="Search Traffic Signs..."
+                placeholderTextColor="#888"
+                value={searchText}
+                onChangeText={setSearchText}
+            />
+                <Text style={{ textAlign: 'center', marginTop: 200, fontSize: 20 }}>Signs yet to be updated...</Text>
+            </View>
+    }
     return (
         <View style={[styles.container, darkMode && styles.darkContainer]}>
             <View style={styles.header}>
@@ -104,7 +125,7 @@ export default function TrafficSignsScreen() {
                             <Text style={styles.modalDescription}>{selectedSign.description}</Text>
                             <Image source={{uri: selectedSign.image}} style={styles.modalImage} />
                             <TouchableOpacity onPress={closeModal} style={styles.closeButton}>
-                                <Text style={styles.closeButtonText}>Close</Text>
+                                <Text style={styles.closeButtonText}>{'Close'}</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -134,7 +155,7 @@ const styles = StyleSheet.create({
     favoriteText: { fontSize: 20, color: '#FFD700' },
     modalOverlay: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)' },
     modalContainer: { backgroundColor: '#ffffff', padding: 20, borderRadius: 10, width: '90%', alignItems: 'center' },
-    modalImage: { width: 100, height: 100, marginBottom: 10 },
+    modalImage: { width: 150, height: undefined, aspectRatio: 1, marginBottom: 20 },
     modalTitle: { fontSize: 22, fontWeight: 'bold', marginBottom: 10 },
     modalDescription: { fontSize: 16, textAlign: 'center', marginBottom: 20 },
     closeButton: { backgroundColor: '#007bff', paddingVertical: 10, paddingHorizontal: 30, borderRadius: 5, alignItems: 'center' },
