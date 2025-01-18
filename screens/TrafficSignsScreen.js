@@ -101,7 +101,7 @@ export default function TrafficSignsScreen() {
                     <View style={styles.modalOverlay}>
                         <View style={styles.modalContainer}>
                             <Text style={styles.modalTitle}>{selectedSign.name}</Text>
-                            <Text style={styles.modalDescription}>{selectedSign.detailedDescription}</Text>
+                            <Text style={styles.modalDescription}>{selectedSign.description}</Text>
                             <Image source={{uri: selectedSign.image}} style={styles.modalImage} />
                             <TouchableOpacity onPress={closeModal} style={styles.closeButton}>
                                 <Text style={styles.closeButtonText}>Close</Text>
