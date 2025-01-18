@@ -75,7 +75,7 @@ export default function TrafficSignsScreen() {
                     keyExtractor={(item) => item.id.toString()}
                     renderItem={({ item }) => (
                         <TouchableOpacity onPress={() => openModal(item)} style={[styles.signContainer, darkMode && styles.darkSignContainer]}>
-                            <Image source={item.image} style={styles.signImage} />
+                            <Image source={{uri: item.image}} style={styles.signImage} />
                             <View style={styles.signInfo}>
                                 <Text style={[styles.signName, darkMode && styles.darkText]}>{item.name}</Text>
                                 <Text style={[styles.signDescription, darkMode && styles.darkText]}>{item.description}</Text>
@@ -102,7 +102,7 @@ export default function TrafficSignsScreen() {
                         <View style={styles.modalContainer}>
                             <Text style={styles.modalTitle}>{selectedSign.name}</Text>
                             <Text style={styles.modalDescription}>{selectedSign.detailedDescription}</Text>
-                            <Image source={selectedSign.image} style={styles.modalImage} />
+                            <Image source={{uri: selectedSign.image}} style={styles.modalImage} />
                             <TouchableOpacity onPress={closeModal} style={styles.closeButton}>
                                 <Text style={styles.closeButtonText}>Close</Text>
                             </TouchableOpacity>
