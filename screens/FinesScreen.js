@@ -85,12 +85,12 @@ const FinesScreen = () => {
             {/* Filter & Sorting Options */}
             <View style={styles.filterBar}>
                 <TouchableOpacity onPress={sortFines} style={styles.sortButton}>
-                    <Text style={styles.filterText}>Sort by Fine {sortOrder === 'asc' ? '↑' : '↓'}</Text>
+                    <Text style={[styles.filterText, darkMode && styles.darkFilterText]}>Sort by Fine {sortOrder === 'asc' ? '↑' : '↓'}</Text>
                 </TouchableOpacity>
 
                 {['All', 'Safety', 'Parking', 'Speeding', 'Severe'].map(category => (
                     <TouchableOpacity key={category} onPress={() => applyCategoryFilter(category)}>
-                        <Text style={[styles.filterText, categoryFilter === category && styles.selectedFilter]}>
+                        <Text style={[styles.filterText, categoryFilter === category && styles.selectedFilter, darkMode && styles.darkFilterText]}>
                             {category}
                         </Text>
                     </TouchableOpacity>
@@ -144,6 +144,9 @@ const styles = StyleSheet.create({
     darkText: {
         color: 'white',
     },
+    darkCategoryText: {
+        color: 'white', // Ensure the category filter text is visible in dark mode
+    },
     searchInput: {
         height: 40,
         borderWidth: 1,
@@ -165,6 +168,10 @@ const styles = StyleSheet.create({
     filterText: {
         fontSize: 14,
         padding: 5,
+        color: 'black', // Default color for light mode
+    },
+    darkFilterText: {
+        color: 'white', // Color for dark mode
     },
     selectedFilter: {
         fontWeight: 'bold',

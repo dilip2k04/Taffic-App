@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
-import { NavigationContainer } from '@react-navigation/native'; // Ensure this is only here
+import { NavigationContainer, DarkTheme } from '@react-navigation/native'; // Ensure Dark theme
 
 import HomeScreen from '../screens/HomeScreen';
 import TrafficSignsScreen from '../screens/TrafficSignsScreen';
@@ -11,23 +11,26 @@ const Tab = createBottomTabNavigator();
 
 export default function AppNavigator() {
     return (
-        <NavigationContainer>  {/* Keep this here */}
+        <NavigationContainer theme={DarkTheme}>  {/* Default to Dark Mode */}
             <Tab.Navigator
                 screenOptions={({ route }) => ({
                     tabBarIcon: ({ color, size }) => {
                         let iconName;
                         if (route.name === 'Rules') {
-                            iconName = 'book';
+                            iconName = 'book';  // Use valid icon names
                         } else if (route.name === 'Signs') {
-                            iconName = 'md-warning';
+                            iconName = 'warning';  // Correct icon name
                         } else if (route.name === 'Fines') {
-                            iconName = 'cash-outline';
+                            iconName = 'cash-outline';  // Valid icon
                         }
                         return <Ionicons name={iconName} size={size} color={color} />;
                     },
-                    tabBarActiveTintColor: 'blue',
-                    tabBarInactiveTintColor: 'gray',
-                    headerShown: false, // Hide the top header
+                    tabBarActiveTintColor: '#f5dd4b',  // Active icon color
+                    tabBarInactiveTintColor: '#aaa',  // Inactive icon color
+                    tabBarStyle: {
+                        backgroundColor: '#121212',  // Dark background for tabs
+                    },
+                    headerShown: false,  // Hide the top header
                 })}
             >
                 <Tab.Screen name="Rules" component={HomeScreen} />

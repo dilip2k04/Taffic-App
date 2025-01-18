@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, FlatList, StyleSheet, ActivityIndicator, Modal, TouchableOpacity, Image } from 'react-native';
+import { 
+    View, Text, TextInput, FlatList, StyleSheet, ActivityIndicator, 
+    Modal, TouchableOpacity, Image, Switch 
+} from 'react-native';
 
-// Load JSON file
 const trafficSignsJson = require('../json files/trafficSigns.json');
 
 export default function TrafficSignsScreen() {
@@ -10,6 +12,8 @@ export default function TrafficSignsScreen() {
     const [loading, setLoading] = useState(true);
     const [modalVisible, setModalVisible] = useState(false);
     const [selectedSign, setSelectedSign] = useState(null);
+    const [darkMode, setDarkMode] = useState(false);
+    const [favorites, setFavorites] = useState([]);
 
     // Load traffic signs from JSON
     useEffect(() => {
@@ -33,27 +37,54 @@ export default function TrafficSignsScreen() {
         setSelectedSign(null);
     };
 
+    // Toggle favorite signs
+    const toggleFavorite = (signId) => {
+        setFavorites((prevFavorites) =>
+            prevFavorites.includes(signId)
+                ? prevFavorites.filter((id) => id !== signId)
+                : [...prevFavorites, signId]
+        );
+    };
+
+    const isFavorite = (signId) => favorites.includes(signId);
+
     return (
-        <View style={styles.container}>
+        <View style={[styles.container, darkMode && styles.darkContainer]}>
+            <View style={styles.header}>
+                <Text style={[styles.title, darkMode && styles.darkTitle]}>Traffic Signs</Text>
+                <Switch
+                    value={darkMode}
+                    onValueChange={setDarkMode}
+                    trackColor={{ false: '#ccc', true: '#333' }}
+                    thumbColor={darkMode ? '#007bff' : '#f4f3f4'}
+                />
+            </View>
             <TextInput
-                style={styles.searchBox}
+                style={[styles.searchBox, darkMode && styles.darkSearchBox]}
                 placeholder="Search Traffic Signs..."
+                placeholderTextColor="#888"
                 value={searchText}
                 onChangeText={setSearchText}
             />
 
             {loading ? (
-                <ActivityIndicator size="large" color="blue" />
+                <ActivityIndicator size="large" color={darkMode ? '#fff' : 'blue'} />
             ) : (
                 <FlatList
                     data={filteredSigns}
                     keyExtractor={(item) => item.id.toString()}
                     renderItem={({ item }) => (
-                        console.log(item),
-                        <TouchableOpacity onPress={() => openModal(item)} style={styles.signContainer}>
+                        <TouchableOpacity onPress={() => openModal(item)} style={[styles.signContainer, darkMode && styles.darkSignContainer]}>
                             <Image source={item.image} style={styles.signImage} />
-                            <Text style={styles.signName}>{item.name}</Text>
-                            <Text style={styles.signDescription}>{item.description}</Text>
+                            <View style={styles.signInfo}>
+                                <Text style={[styles.signName, darkMode && styles.darkText]}>{item.name}</Text>
+                                <Text style={[styles.signDescription, darkMode && styles.darkText]}>{item.description}</Text>
+                            </View>
+                            <TouchableOpacity onPress={() => toggleFavorite(item.id)} style={styles.favoriteButton}>
+                                <Text style={styles.favoriteText}>
+                                    {isFavorite(item.id) ? '★' : '☆'}
+                                </Text>
+                            </TouchableOpacity>
                         </TouchableOpacity>
                     )}
                 />
@@ -69,7 +100,6 @@ export default function TrafficSignsScreen() {
                 >
                     <View style={styles.modalOverlay}>
                         <View style={styles.modalContainer}>
-                            
                             <Text style={styles.modalTitle}>{selectedSign.name}</Text>
                             <Text style={styles.modalDescription}>{selectedSign.detailedDescription}</Text>
                             <Image source={selectedSign.image} style={styles.modalImage} />
@@ -86,31 +116,27 @@ export default function TrafficSignsScreen() {
 
 // Styles
 const styles = StyleSheet.create({
-    container: { flex: 1, padding: 20, backgroundColor: '#f8f9fa', marginTop: 50 },
-    searchBox: { height: 40, borderColor: 'gray', padding: 20, borderWidth: 1, marginBottom: 10, paddingLeft: 10, borderRadius: 5 },
-    signContainer: { backgroundColor: '#ffffff', padding: 10, marginVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: '#ccc', alignItems: 'center' },
-    signImage: { width: 80, height: 80, marginBottom: 10 },
+    container: { flex: 1, padding: 20, backgroundColor: '#f8f9fa' },
+    darkContainer: { backgroundColor: '#121212' },
+    header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 },
+    title: { fontSize: 24, fontWeight: 'bold', color: '#182E05' },
+    darkTitle: { color: '#fff' },
+    searchBox: { height: 40, borderColor: 'gray', borderWidth: 1, borderRadius: 5, marginBottom: 10, paddingLeft: 10 },
+    darkSearchBox: { borderColor: '#555', backgroundColor: '#333', color: '#fff' },
+    signContainer: { flexDirection: 'row', alignItems: 'center', padding: 10, marginVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: '#ccc', backgroundColor: '#ffffff' },
+    darkSignContainer: { backgroundColor: '#222', borderColor: '#555' },
+    signImage: { width: 60, height: 60, marginRight: 10 },
+    signInfo: { flex: 1 },
     signName: { fontSize: 18, fontWeight: 'bold', color: '#333' },
-    signDescription: { fontSize: 20, color: 'black' },
-
-    // Modal Styles
-    modalOverlay: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    },
-    modalContainer: {
-        backgroundColor: '#ffffff',
-        padding: 20,
-        borderRadius: 10,
-        width: '90%',
-        height:"90%",
-        alignItems: 'center',
-    },
+    darkText: { color: '#ccc' },
+    signDescription: { fontSize: 14, color: '#666' },
+    favoriteButton: { padding: 10 },
+    favoriteText: { fontSize: 20, color: '#FFD700' },
+    modalOverlay: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)' },
+    modalContainer: { backgroundColor: '#ffffff', padding: 20, borderRadius: 10, width: '90%', alignItems: 'center' },
     modalImage: { width: 100, height: 100, marginBottom: 10 },
-    modalTitle: { fontSize: 22, fontWeight: 'bold', marginBottom: 10, textAlign: 'center' },
-    modalDescription: { fontSize: 20, textAlign: 'left', marginBottom: 20, },
-    closeButton: { backgroundColor: '#007bff', paddingVertical: 10, paddingHorizontal: 30, borderRadius: 5, alignItems: 'center',marginTop:"320" },
+    modalTitle: { fontSize: 22, fontWeight: 'bold', marginBottom: 10 },
+    modalDescription: { fontSize: 16, textAlign: 'center', marginBottom: 20 },
+    closeButton: { backgroundColor: '#007bff', paddingVertical: 10, paddingHorizontal: 30, borderRadius: 5, alignItems: 'center' },
     closeButtonText: { color: '#ffffff', fontSize: 16 },
 });
