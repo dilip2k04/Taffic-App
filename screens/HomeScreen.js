@@ -70,40 +70,6 @@ export default function HomeScreen() {
         }
     };
 
-    if (filteredRules.length == 0) {
-        return (
-            <View
-                style={[
-                    styles.container,
-                    { backgroundColor: isDarkMode ? '#121212' : '#f8f9fa' },
-                ]}
-            >
-                <View style={styles.header}>
-                    <Text style={styles.title}>{'Traffic Rules'}</Text>
-                    <Switch
-                        value={isDarkMode}
-                        onValueChange={toggleDarkMode}
-                        thumbColor={isDarkMode ? '#f5dd4b' : '#f4f3f4'}
-                        trackColor={{ false: '#767577', true: '#81b0ff' }}
-                    />
-                </View>
-
-                <TextInput
-                    style={[
-                        styles.searchBox,
-                        { backgroundColor: isDarkMode ? '#333' : '#fff', color: isDarkMode ? '#fff' : '#000' },
-                    ]}
-                    placeholder="Search Traffic Rules..."
-                    placeholderTextColor={isDarkMode ? '#aaa' : '#000'}
-                    value={searchText}
-                    onChangeText={setSearchText}
-                />
-                <Text style={{ textAlign: 'center', marginTop: 200, fontSize: 20 }}>Rules yet to be updated...</Text>
-
-            </View>
-        )
-    }
-
 
 
     return (
@@ -133,6 +99,7 @@ export default function HomeScreen() {
                 value={searchText}
                 onChangeText={setSearchText}
             />
+            {filteredRules.length === 0 && <Text style={{  textAlign: 'center', fontSize: 20, color: 'red' }}>Rules yet to be updated...</Text>}
 
             {loading ? (
                 <ActivityIndicator size="large" color="blue" />
