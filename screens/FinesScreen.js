@@ -64,42 +64,6 @@ const FinesScreen = () => {
         }
     };
 
-    if(filteredFines.length === 0) {
-        return         <View style={[styles.container, darkMode && styles.darkContainer]}>
-        <View style={styles.topBar}>
-            <Text style={[styles.title, darkMode && styles.darkText]}>Traffic Fines</Text>
-            <Switch
-                value={darkMode}
-                onValueChange={() => setDarkMode(!darkMode)}
-            />
-        </View>
-
-        <TextInput
-            style={[styles.searchInput, darkMode && styles.darkSearchInput]}
-            placeholder="Search fines..."
-            placeholderTextColor={darkMode ? '#ccc' : '#000'}
-            value={searchText}
-            onChangeText={searchFines}
-        />
-
-        {/* Filter & Sorting Options */}
-        <View style={styles.filterBar}>
-            <TouchableOpacity onPress={sortFines} style={styles.sortButton}>
-                <Text style={[styles.filterText, darkMode && styles.darkFilterText]}>Sort by Fine {sortOrder === 'asc' ? '↑' : '↓'}</Text>
-            </TouchableOpacity>
-
-            {['All', 'Safety', 'Parking', 'Speeding', 'Severe'].map(category => (
-                <TouchableOpacity key={category} onPress={() => applyCategoryFilter(category)}>
-                    <Text style={[styles.filterText, categoryFilter === category && styles.selectedFilter, darkMode && styles.darkFilterText]}>
-                        {category}
-                    </Text>
-                </TouchableOpacity>
-            ))}
-        </View>
-        <Text style={{ textAlign: 'center', marginTop: 200, fontSize: 20 }}>Fines yet to be updated...</Text>
-        </View>
-    }
-
     return (
         <View style={[styles.container, darkMode && styles.darkContainer]}>
             <View style={styles.topBar}>
@@ -132,6 +96,7 @@ const FinesScreen = () => {
                     </TouchableOpacity>
                 ))}
             </View>
+            {filteredFines.length === 0 && <Text style={{  textAlign: 'center', fontSize: 20, color: 'red' }}>Fines yet to be updated...</Text>}
 
             <FlatList
                 data={filteredFines}

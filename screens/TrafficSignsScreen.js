@@ -48,27 +48,6 @@ export default function TrafficSignsScreen() {
 
     const isFavorite = (signId) => favorites.includes(signId);
 
-    if(filteredSigns.length === 0) {
-        return <View style={[styles.container, darkMode && styles.darkContainer]}>
-            <View style={styles.header}>
-                <Text style={[styles.title, darkMode && styles.darkTitle]}>Traffic Signs</Text>
-                <Switch
-                    value={darkMode}
-                    onValueChange={setDarkMode}
-                    trackColor={{ false: '#ccc', true: '#333' }}
-                    thumbColor={darkMode ? '#007bff' : '#f4f3f4'}
-                />
-            </View>
-            <TextInput
-                style={[styles.searchBox, darkMode && styles.darkSearchBox]}
-                placeholder="Search Traffic Signs..."
-                placeholderTextColor="#888"
-                value={searchText}
-                onChangeText={setSearchText}
-            />
-                <Text style={{ textAlign: 'center', marginTop: 200, fontSize: 20 }}>Signs yet to be updated...</Text>
-            </View>
-    }
     return (
         <View style={[styles.container, darkMode && styles.darkContainer]}>
             <View style={styles.header}>
@@ -87,6 +66,8 @@ export default function TrafficSignsScreen() {
                 value={searchText}
                 onChangeText={setSearchText}
             />
+            {filteredSigns.length === 0 && <Text style={{  textAlign: 'center', fontSize: 20, color: 'red' }}>Signs yet to be updated...</Text>}
+
 
             {loading ? (
                 <ActivityIndicator size="large" color={darkMode ? '#fff' : 'blue'} />
