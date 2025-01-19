@@ -88,7 +88,7 @@ const FinesScreen = () => {
                     <Text style={[styles.filterText, darkMode && styles.darkFilterText]}>Sort by Fine {sortOrder === 'asc' ? '↑' : '↓'}</Text>
                 </TouchableOpacity>
 
-                {['All', 'Safety', 'Parking', 'Speeding', 'Severe'].map(category => (
+                {['All', 'Safety', 'Parking', 'Speeding', 'Pollution','License','Other'].map(category => (
                     <TouchableOpacity key={category} onPress={() => applyCategoryFilter(category)}>
                         <Text style={[styles.filterText, categoryFilter === category && styles.selectedFilter, darkMode && styles.darkFilterText]}>
                             {category}
