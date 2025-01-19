@@ -19,10 +19,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./public/logo.jpg",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.dilip_18.TrafficApp"
     },
     "web": {
       "favicon": "./public/logo.jpg"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c4eb2678-880e-4dad-accc-d8b7218e7d52"
+      }
     }
   }
 }
